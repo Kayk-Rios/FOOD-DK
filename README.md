@@ -12,7 +12,7 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Click no link para ver projeto: (https://food-dk.netlify.app/)
 
 seleçao de comidas
 ![Front-food](https://github.com/user-attachments/assets/3eb78b91-e504-4a6c-84aa-9efbfd552e4a)
