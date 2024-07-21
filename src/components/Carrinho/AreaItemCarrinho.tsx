@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export interface AreaItemCarrinhoProps {
   item: ItemCarrinho;
-  adicionar? : (item: ItemCarrinho) => void;
-  remover? : (item: ItemCarrinho) => void;
+  adicionar?: (item: ItemCarrinho) => void;
+  remover?: (item: ItemCarrinho) => void;
 }
 
 export default function AreaItemCarrinho(props: AreaItemCarrinhoProps) {
@@ -20,19 +20,19 @@ export default function AreaItemCarrinho(props: AreaItemCarrinhoProps) {
           />
         </div>
         <div className="flex flex-col justify-center flex-1  ">
-        <span className="text-xl font-bold">
-            {props.item.produto.nome}
-          </span>
+          <span className="text-xl font-bold">{props.item.produto.nome}</span>
           <span className="text-xl text-slate-400 ">
             {props.item.produto.descricao}
           </span>
-            <div className="flex items-center ga-2 mt-2 text-zinc-400 text-lg font-bold">
-               <span>R$ {props.item.produto.preco.toFixed(2)} </span>
-                <span className="mx-2"> x </span>
-                <span> {props.item.quantidade} = </span>
-                <span className="text-yellow-200"> R$ {(props.item.produto.preco * props.item.quantidade).toFixed(2)}</span>
-            </div>
-
+          <div className="flex items-center ga-2 mt-2 text-zinc-400 text-lg font-bold">
+            <span>R$ {props.item.produto.preco.toFixed(2)} </span>
+            <span className="mx-2"> x </span>
+            <span> {props.item.quantidade} = </span>
+            <span className="text-yellow-200">
+              {" "}
+              R$ {(props.item.produto.preco * props.item.quantidade).toFixed(2)}
+            </span>
+          </div>
         </div>
 
         <div className=" flex gap-2 items-center px-5 ">
