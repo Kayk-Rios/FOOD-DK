@@ -31,3 +31,58 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Parte main que contem conteudo principal das paginas */
+.main{
+  width: 1200px;
+}
+
+/* Parte da finalizaçao de compra de item */
+
+.finalizar{
+  width: 500px;
+}
+.adicionar{
+  margin-left: 80%;
+  margin-top:-5%;
+  margin-bottom: 10px;
+}
+@media (max-width: 1000px) {
+  .main{
+    width: 90%;
+  }
+}
+@media (max-width: 600px){
+  .finalizar{
+    width: 94%;
+  }
+  .image{
+    width: 160px;
+    height: 250px;
+    object-fit: cover
+  }
+  .card-item{
+    padding: 2px;
+     gap: 5px;
+  }
+  .name-descricao-preco .name1{
+    font-size: 17px !important;
+  }
+  .name-descricao-preco .descicao1{
+    font-size: 14px !important;
+  
+  }
+  .multi-result-quant .preco{
+    font-size: 13px !important;
+  }
+   .multi-result-quant .multi{
+    font-size: 11px !important;
+  }
+  .multi-result-quant .quant{
+    font-size: 11px !important
+  }
+  .adicionar{
+    margin-left: 50px;
+    margin-top: 35px;
+  }
+}

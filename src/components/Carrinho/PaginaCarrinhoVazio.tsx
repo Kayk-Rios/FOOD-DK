@@ -27,7 +27,7 @@ export default function PaginaCarrinhoVazio() {
         </svg>
         <div>
           <h2>Seu carrinho esta vazio</h2>
-          <p>Adcione produtos clicando no butao abaixo</p>
+          <p>Adicione produtos clicando no butao abaixo</p>
         </div>
         <div className=" bg-yellow-300 rounded-sm p-1">
           <Link href="/"> Ver Produtos</Link>

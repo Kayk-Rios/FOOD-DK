@@ -11,7 +11,7 @@ export default function AreaItemCarrinho(props: TotalCarrinhoProps) {
   );
   return (
     <>
-      <div className="flex justify-around items-center gap-2 bg-zinc-900 rounded-md overflow-hidden w-[500px] ml-2.5 ">
+      <div className="flex justify-around items-center gap-2 bg-zinc-900 rounded-md overflow-hidden finalizar ml-2.5 ">
         <div className="flex flex-col justify-around">
           <span className="text-zin-400">Total</span>
           <span className="text-3xl font-bold text-yellow-300">
