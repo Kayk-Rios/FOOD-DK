@@ -1,3 +1,4 @@
+import useCarrinho from "@/data/hooks/useCarrinho"
 import Produto from "@/data/model/Produto"
 import Image from "next/image"
 
@@ -7,6 +8,7 @@ export interface CartaoProdutoProps{
 
 }
 export default function CardProduto(props: CartaoProdutoProps){
+    const {adicionar} = useCarrinho()
     const {nome, descricao, preco, imagem} = props.produto
     return(
         <>
@@ -19,7 +21,7 @@ export default function CardProduto(props: CartaoProdutoProps){
              <p className="flex-1 text-zinc-400 ">{descricao}</p>
              <div className=" flex justify-between items-center">
                  <span className="text-lg font-bold mt-2">{preco.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}</span>
-                 <button className="border rounded-full px-4 py-1 text-sm">Adicionar</button>
+                 <button onClick={()=> adicionar(props.produto)}  className="border rounded-full px-4 py-1 text-sm  ">Adicionar</button>
              </div>
 
             </div>

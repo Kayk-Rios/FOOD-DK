@@ -1,6 +1,8 @@
+import useCarrinho from "@/data/hooks/useCarrinho";
 import Link from "next/link";
 
 export default function Carrinho() {
+    const {qtdDitens} = useCarrinho()
   return (
     <>
       <div>
@@ -25,7 +27,7 @@ export default function Carrinho() {
               <path d="M6 5l14 1l-1 7h-13" />
             </svg>
             <div className="absolute  -top-0 w-6 h-6 bg-red-600 rounded-full flex justify-center items-center ">
-              26
+              {qtdDitens}
             </div>
           </div>
         </Link>
