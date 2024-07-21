@@ -25,3 +25,13 @@ Carrinho de compras
 Carrinho vazio
 
 ![CarrinhoVazio-front](https://github.com/user-attachments/assets/1201e0e7-3a55-48e2-8c7f-10e3404e7980)
+
+Mbile
+
+![mobi4](https://github.com/user-attachments/assets/4311093e-d68b-45d5-9b68-73975b0588f2)
+
+
+![mobile2](https://github.com/user-attachments/assets/a297a9bd-ce3a-482c-a00d-2b9a32f49cb6)
+
+
+
